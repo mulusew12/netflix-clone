@@ -1,7 +1,7 @@
 import React from 'react'
 import './Footer.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBell, faCopyright, faSearch, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faBell, faCopyright} from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faGit, faGithub, faInstagram, faLinkedin, faTelegram, faYoutube } from '@fortawesome/free-brands-svg-icons';
 const Footer = () => {
   return (
@@ -13,6 +13,7 @@ const Footer = () => {
         <FontAwesomeIcon icon={faYoutube} className='fa'/>
         <FontAwesomeIcon icon={faLinkedin} className='fa'/>
         <FontAwesomeIcon icon={faGithub} className='fa'/>
+        <FontAwesomeIcon icon={faGit} className='fa'/>
       </div>
       <ul>
         <li>Audio Description</li>

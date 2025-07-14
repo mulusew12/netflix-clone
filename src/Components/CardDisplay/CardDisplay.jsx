@@ -24,7 +24,6 @@ const CardDisplay = ({category,title}) => {
         .then(res => res.json())
         .then(response => setApiData(response.results))
         .catch(err => console.error(err));
-        
         myRef.current.addEventListener('wheel', handleWheel)
     
     },[])
@@ -44,7 +43,6 @@ const CardDisplay = ({category,title}) => {
         </Link>)
       })}
         </div>
-      
     </div>
   )
 }
