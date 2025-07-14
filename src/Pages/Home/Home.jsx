@@ -11,10 +11,7 @@ import Footer from '../../Components/Footer/Footer';
 import Login from '../Login/Login';
 
 const Home = () => {
- 
   return (
-
-
     <div className='home'>
 
       <Navebar />
