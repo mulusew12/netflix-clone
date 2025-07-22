@@ -1,14 +1,14 @@
 import React, { useState } from 'react'
 import './Home.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowLeft, faInfo, faPlay } from '@fortawesome/free-solid-svg-icons';
+import { faInfo, faPlay } from '@fortawesome/free-solid-svg-icons';
 
 import CardDisplay from '../../Components/CardDisplay/CardDisplay'
 import Navebar from '../../Components/NavBar/Navbar'
 import net_back from '../../assets/net_back.jpg'
 import net_Original from '../../assets/net_Original.jpg'
 import Footer from '../../Components/Footer/Footer';
-import Login from '../Login/Login';
+
 
 const Home = () => {
   return (
