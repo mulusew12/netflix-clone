@@ -1,63 +1,14 @@
 
 import net_back from './net_back.jpg'
+import net_Original from './net_Original'
 
-
-import logo from './logo.jpg'
-import food_1 from './food_1.jpg'
-import food_2 from './food_2.jpg'
-import food_3 from './food_3.jpg'
-import food_4 from './food_4.jpg'
-import food_5 from './food_5.jpg'
-import food_6 from './food_6.jpg'
-import food_7 from './food_7.jpg'
-import food_8 from './food_8.jpg'
-import food_9 from './food_9.jpg'
-import food_10 from './food_10.jpg'
-import food_11 from './food_11.jpg'
-import food_12 from './food_12.jpg'
-import food_13 from './food_13.jpg'
-import food_14 from './food_14.jpg'
-import food_15 from './food_15.jpg'
-import food_16 from './food_16.jpg'
-import food_17 from './food_17.jpg'
-import food_18 from './food_18.jpg'
-import food_19 from './food_19.jpg'
-import food_20 from './food_20.jpg'
-import food_21 from './food_21.jpg'
-import food_22 from './food_22.jpg'
-import food_23 from './food_23.jpg'
 
 
 
 
 export const assets = {
-salad_1,
-logo,
-food_1,
-food_2,
-food_3,
-food_4,
-food_5,
-food_6,
-food_7,
-food_8,
-food_9,
-food_10,
-food_11,
-food_12,
-food_13,
-food_14,
-food_13,
-food_15,
-food_16,
-food_17,
-food_18,
-food_19,
-food_20,
-food_21,
-food_22,
-food_23,
-
+net_Original,
+net_back
 
 }
 

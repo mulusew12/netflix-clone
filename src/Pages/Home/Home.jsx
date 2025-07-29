@@ -3,11 +3,14 @@ import './Home.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInfo, faPlay } from '@fortawesome/free-solid-svg-icons';
 
+
+
 import CardDisplay from '../../Components/CardDisplay/CardDisplay'
 import Navebar from '../../Components/NavBar/Navbar'
-import net_back from '../../assets/net_back.jpg'
-import net_Original from '../../assets/net_Original.jpg'
+
+
 import Footer from '../../Components/Footer/Footer';
+import { assets } from '../../assets/assets';
 
 
 const Home = () => {
@@ -16,9 +19,9 @@ const Home = () => {
 
       <Navebar />
       <div className='imm'>
-        <img src={net_back} alt="" />
+        <img src={assets.net_back} alt="" />
         <div className="hero">
-          <img src={net_Original} alt="" />
+          <img src={assets.net_Original} alt="" />
           <div className="title">
             <h3>THE</h3>
             <h1>PROTECTOR</h1>
