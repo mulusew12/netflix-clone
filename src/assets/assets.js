@@ -28,54 +28,6 @@ import food_22 from './food_22.jpg'
 import food_23 from './food_23.jpg'
 
 
-import item_1 from './item_1.jpg'
-import item_2 from './item_2.jpg'
-import item_3 from './item_3.jpg'
-import item_4 from './item_4.jpg'
-import item_5 from './item_5.jpg'
-import item_6 from './item_6.jpg'
-
-
-import salad_1 from './salad_1.jpg'
-import salad_2 from './salad_2.jpg'
-import salad_3 from './salad_3.jpg'
-import salad_4 from './salad_4.jpg'
-import salad_5 from './salad_5.jpg'
-import salad_6 from './salad_6.jpg'
-
-
-
-import cabage_1 from './cabage_1.jpg'
-import cabage_2 from './cabage_2.jpg'
-import cabage_3 from './cabage_3.jpg'
-import cabage_4 from './cabage_4.jpg'
-import cabage_5 from './cabage_5.jpg'
-import cabage_6 from './cabage_6.jpg'
-
-import strawberry_1 from './strawberry_1.jpg'
-import strawberry_2 from './strawberry_2.jpg'
-import strawberry_3 from './strawberry_3.jpg'
-import strawberry_4 from './strawberry_4.jpg'
-import strawberry_5 from './strawberry_5.jpg'
-import strawberry_6 from './strawberry_6.jpg'
-
-
-import coc_1 from './coc_1.jpg'
-import coc_2 from './coc_2.jpg'
-import coc_3 from './coc_3.jpg'
-import coc_4 from './coc_4.jpg'
-import coc_5 from './coc_5.jpg'
-import coc_6 from './coc_6.jpg'
-
-import pin_1 from './pin_1.jpg'
-import pin_2 from './pin_2.jpg'
-import pin_3 from './pin_3.jpg'
-import pin_4 from './pin_4.jpg'
-import pin_5 from './pin_5.jpg'
-import pin_6 from './pin_6.jpg'
-
-
-
 
 
 export const assets = {
