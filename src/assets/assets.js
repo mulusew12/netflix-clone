@@ -76,12 +76,7 @@ import pin_6 from './pin_6.jpg'
 
 
 
-import fruit_1 from './fruit_1.jpg'
-import fruit_2 from './fruit_2.jpg'
-import fruit_3 from './fruit_3.jpg'
-import fruit_4 from './fruit_4.jpg'
-import fruit_5 from './fruit_5.jpg'
-import fruit_6 from './fruit_6.jpg'
+
 
 export const assets = {
 salad_1,
