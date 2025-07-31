@@ -1,6 +1,8 @@
 .naves{
    align-items: center;
     position: fixed;
+    top: 0;
+    padding-right: 16px;
     display: flex;
     width: 110%;
     place-self: center;
@@ -147,6 +149,7 @@ display: none;
     }
     .naves{
         width: 120%;
+        padding-right: 20px;
     }
 }
 @media (max-width: 1130px) {
