@@ -10,7 +10,7 @@ import Navebar from '../../Components/NavBar/Navbar'
 
 
 import Footer from '../../Components/Footer/Footer';
-import { assets } from '../../assets/assets';
+
 
 
 
@@ -20,9 +20,9 @@ const Home = () => {
 
       <Navebar />
       <div className='imm'>
-        <img src={assets.net_back} alt="" />
+       {/*  <img src={assets.net_back} alt="" />*/}
         <div className="hero">
-         <img src={assets.net_Original} alt="" />
+        {/* <img src={assets.net_Original} alt="" />*/}
           <div className="title">
             <h3>THE</h3>
             <h1>PROTECTOR</h1>
