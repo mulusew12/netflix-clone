@@ -10,6 +10,7 @@ import Navebar from '../../Components/NavBar/Navbar'
 
 
 import Footer from '../../Components/Footer/Footer';
+import { assets } from '../../assets/assets';
 
 
 
@@ -21,19 +22,19 @@ const Home = () => {
       <div className='imm'>
         <img src={assets.net_back} alt="" />
         <div className="hero">
-        
+         <img src={assets.net_Original} alt="" />
           <div className="title">
             <h3>THE</h3>
             <h1>PROTECTOR</h1>
           </div>
-          <p>Discovering his ties to secret 
-            ancient order, a young man living in  modern Istambul 
+          <p>Discovering his ties to secret
+            ancient order, a young man living in  modern Istambul
             embarking on a qusest to save the city from an immoral enemies.
-             </p>
-             <div className="buts">
-                <button className='play'><FontAwesomeIcon icon={faPlay} />Play</button>
-                <button className='inf'><FontAwesomeIcon icon={faInfo} className='i' />More info</button>
-             </div>
+          </p>
+          <div className="buts">
+            <button className='play'><FontAwesomeIcon icon={faPlay} />Play</button>
+            <button className='inf'><FontAwesomeIcon icon={faInfo} className='i' />More info</button>
+          </div>
         </div>
       </div>
       <div className="cards">
@@ -41,8 +42,8 @@ const Home = () => {
         <CardDisplay title="Popular" category="popular" />
         <CardDisplay title="Top Rating" category="top_rated" />
         <CardDisplay title="Upcoming" category="upcoming" />
-        
-      <Footer/>
+
+        <Footer />
       </div>
 
 
