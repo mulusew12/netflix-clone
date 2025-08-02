@@ -4,15 +4,15 @@ import { logout } from '../../firebase';
 import React, { useEffect, useRef, useState } from 'react'
 import './Navbar.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBell, faCaretDown, faClose, faList, faSearch, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faBell, faCaretDown, faClose, faList, faRemove, faSearch, faUser } from '@fortawesome/free-solid-svg-icons';
 import net_logo from '../../assets/net_logo.jpg'
 import { Link } from 'react-router-dom';
 
-const Navebar = () => {
+const Navbar = () => {
     const refer = useRef()
-    const refe = useRef()
+    const ref = useRef()
     const[list, setList]= useState(false)
-
+    
 
     return (
 
@@ -23,11 +23,10 @@ const Navebar = () => {
                     <img src={net_logo} alt="" />
                 </div>
 
-              <div className="list">
-              <FontAwesomeIcon icon={faList} onClick={()=>setList(prev=>prev===true?false:true)} />
-              </div>
-               <div className={`${!list?"li":'lis'}`}>
-               <ul ref={refe}>
+           
+               <div className={ list ? 'li' : 'lis'}>
+              
+               <ul ref={ref} >
                         <li>Home</li>
                         <li>TV Shows</li>
                         <li>New & Popular</li>
@@ -40,6 +39,12 @@ const Navebar = () => {
 
             </div>
             <div className="rights">
+                 <div className="list">
+                {!list?  <FontAwesomeIcon icon={faList} onClick={()=>setList(prev=>prev===true?false:true)} />
+           :    <FontAwesomeIcon icon={faRemove} onClick={()=>setList(prev=>prev===true?false:true)} />
+             }
+            
+              </div>
                 <div className="rights-right">
                    <FontAwesomeIcon icon={faSearch} />
                   <p>Children</p>
@@ -65,4 +70,4 @@ const Navebar = () => {
 
 
 
-export default Navebar
+export default Navbar

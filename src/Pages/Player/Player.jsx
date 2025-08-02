@@ -5,9 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
 const Player = () => {
+  const [nameShow, setNameShow] = useState(false)
    const {id} = useParams()
-
-
   const[apiData, setApiData] = useState({
     name: "",
     key: "",
@@ -53,6 +52,15 @@ useEffect(()=>{
        <p>{apiData.published_at.slice(0,10)}</p>
          <p>{apiData.name}</p>
          <p>{apiData.type}</p>
+       </div>
+
+         <div className='player-info-sm'>
+       <p>{apiData.published_at.slice(0,10)}</p>
+       
+       {!nameShow &&     <span className='first' onClick={()=>setNameShow(prev=>prev===true ? false : true)}>{apiData.name.charAt(0)}</span>
+      }
+     { nameShow && <p onClick={()=>setNameShow(false)}>{apiData.name}</p>}
+         <p >{apiData.type}</p>
        </div>
     </div>
   )

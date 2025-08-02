@@ -6,7 +6,7 @@ import { faInfo, faPlay } from '@fortawesome/free-solid-svg-icons';
 
 
 import CardDisplay from '../../Components/CardDisplay/CardDisplay'
-import Navebar from '../../Components/NavBar/Navbar'
+import Navbar from '../../Components/NavBar/Navbar'
 
 
 import Footer from '../../Components/Footer/Footer';
@@ -19,7 +19,7 @@ const Home = () => {
   return (
     <div className='home'>
 
-      <Navebar />
+      <Navbar />
       <div className='imm'>
       <img src="/net_back.jpg" alt="" />
         <div className="hero">
@@ -43,7 +43,6 @@ const Home = () => {
         <CardDisplay title="Popular" category="popular" />
         <CardDisplay title="Top Rating" category="top_rated" />
         <CardDisplay title="Upcoming" category="upcoming" />
-
         <Footer />
       </div>
 

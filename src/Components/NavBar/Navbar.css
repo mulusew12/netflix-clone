@@ -59,12 +59,8 @@ ul li:hover{
 }
 .list{
 font-size: 20px;
-margin-right: 20px;
 place-self: center;
 cursor: pointer;
-position: absolute;
-left: 20%;
-right: 40%;
 display: none;
 
 }
@@ -164,13 +160,16 @@ display: none;
         position: absolute;
         display: flex;
         flex-direction: column;
-        left: 5%;
+        left: 0;
     }
    
 }
 @media (max-width: 700px) {
     .naves{
         width: 130%;
+    }
+    .rights-right p{
+        display: none;
     }
 }
 @media (max-width: 1160px) {
