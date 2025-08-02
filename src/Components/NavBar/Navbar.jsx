@@ -6,7 +6,7 @@ import './Navbar.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBell, faCaretDown, faClose, faList, faRemove, faSearch, faUser } from '@fortawesome/free-solid-svg-icons';
 import net_logo from '../../assets/net_logo.jpg'
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, NavLink, useNavigate } from 'react-router-dom';
 
 
 const Navbar = () => {
@@ -35,7 +35,7 @@ const Navbar = () => {
                         <li>New & Popular</li>
                         <li>My List</li>
                         <li>Browse By Language</li>
-                        <span onClick={()=>navigate(docUrl)} className='docs'>docs</span>
+                        <NavLink to={docUrl} className='docs'>docs</NavLink>
                     </ul>
                     
                </div>
