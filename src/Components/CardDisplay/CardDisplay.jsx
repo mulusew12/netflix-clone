@@ -37,7 +37,6 @@ const CardDisplay = ({category,title}) => {
         <div className="a"  ref={myRef}>
       {apiData.map((CardDisplay, index)=>{
         return(<Link to={`./player/${CardDisplay.id}`} key={index} className='card-display-items'>
-
             <img src={`https://image.tmdb.org/t/p/w500/`+CardDisplay.backdrop_path} alt="" />
             <h3>{CardDisplay.original_title}</h3>
         </Link>)
@@ -46,5 +45,4 @@ const CardDisplay = ({category,title}) => {
     </div>
   )
 }
-
 export default CardDisplay

@@ -45,12 +45,7 @@ const Home = () => {
         <CardDisplay title="Upcoming" category="upcoming" />
         <Footer />
       </div>
-
-
-
     </div>
-
-
   )
 }
 

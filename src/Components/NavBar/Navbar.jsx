@@ -5,6 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBell, faCaretDown, faClose, faList, faRemove, faSearch, faUser } from '@fortawesome/free-solid-svg-icons';
 import net_logo from '../../assets/net_logo.jpg'
 import { Link, NavLink, useNavigate } from 'react-router-dom';
+import CardDisplay from '../CardDisplay/CardDisplay';
+
 
 
 const Navbar = () => {
@@ -63,19 +65,13 @@ const Navbar = () => {
                     <FontAwesomeIcon icon={faCaretDown} />
                     <p className='sm' onClick={()=>{logout()}} >Sign out of Netflix</p>
                 </div>
-                   
-
             </div>
-            <div >
-                
+          <div className='searched'>
+            <div className='card'>
+                 <CardDisplay title="Now Playing" category="now_playing" />
             </div>
+          </div>
         </div>
-
-
-
-
-
-
     )
 }
 
