@@ -1,6 +1,4 @@
 import { logout } from '../../firebase';
-
-
 import React, { useEffect, useRef, useState } from 'react'
 import './Navbar.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -15,11 +13,11 @@ const Navbar = () => {
     const refer = useRef()
     const ref = useRef()
     const[list, setList]= useState(false)
+    const [showInput, setShowInput] = useState(false)
     
 
+
     return (
-
-
         <div className="naves" ref={refer}>
             <div className="lefts">
                 <div className='logo'>
@@ -43,6 +41,11 @@ const Navbar = () => {
                     
 
             </div>
+            {  showInput &&
+            <div className="input">
+                <input type="text" />
+            </div>
+           }
             <div className="rights">
                  <div className="list">
                 {!list?  <FontAwesomeIcon icon={faList} onClick={()=>setList(prev=>prev===true?false:true)} />
@@ -51,7 +54,7 @@ const Navbar = () => {
             
               </div>
                 <div className="rights-right">
-                   <FontAwesomeIcon icon={faSearch} />
+                   <FontAwesomeIcon  icon={faSearch} onClick={()=>setShowInput(prev=>prev===true? false : true)}  />
                   <p>Children</p>
                   <FontAwesomeIcon icon={faBell} />
                 </div>
@@ -62,6 +65,9 @@ const Navbar = () => {
                 </div>
                    
 
+            </div>
+            <div >
+                
             </div>
         </div>
 

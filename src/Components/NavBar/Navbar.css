@@ -127,8 +127,18 @@ display: none;
     align-items: center;
     place-self: center;
     font-size: 20px;
-    color: blue;
+    color: bisque;
     cursor: pointer;
+}
+.input{
+    position: absolute;
+    top: 52px;
+    right: 170px;
+    width: 200px;
+}
+.input input{
+    padding: 8px;
+    width: 100%;
 }
 
 @keyframes in{
