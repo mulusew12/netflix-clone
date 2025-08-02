@@ -53,9 +53,7 @@
     cursor: pointer;
 }
 ul li:hover{
-    text-decoration: underline;
-    color: rgb(235, 203, 161);
-    background: rgb(97, 94, 94);
+    background: rgb(24, 24, 24);
 }
 .list{
 font-size: 20px;
@@ -124,6 +122,15 @@ display: none;
     color: white;
 }
 
+.docs{
+    text-align: center;
+    align-items: center;
+    place-self: center;
+    font-size: 20px;
+    color: blue;
+    cursor: pointer;
+}
+
 @keyframes in{
     0%{
         opacity: 0;
@@ -133,7 +140,9 @@ display: none;
     }
 }
 @media (max-width: 800px) {
-  
+  .logo img{
+    width: 160px;
+  }
   .lefts ul{
       left: 0;
     }
@@ -145,7 +154,7 @@ display: none;
     }
     .naves{
         width: 120%;
-        padding-right: 20px;
+        padding-right: 10px;
     }
 }
 @media (max-width: 1130px) {
@@ -154,13 +163,16 @@ display: none;
       
     }
     .li ul{
-        background: white;
-        color: black;
+        background: rgb(10, 10, 10);
+        color: rgb(226, 224, 224);
         top: 60px;
         position: absolute;
         display: flex;
         flex-direction: column;
         left: 0;
+        text-decoration: none;
+        box-shadow: 2px 3px 3px white;
+        border-radius: 10px;
     }
    
 }

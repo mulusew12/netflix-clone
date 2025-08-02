@@ -6,9 +6,12 @@ import './Navbar.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBell, faCaretDown, faClose, faList, faRemove, faSearch, faUser } from '@fortawesome/free-solid-svg-icons';
 import net_logo from '../../assets/net_logo.jpg'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+
 
 const Navbar = () => {
+    const navigate = useNavigate()
+     const docUrl = import.meta.env.VITE_DOCS_URL;
     const refer = useRef()
     const ref = useRef()
     const[list, setList]= useState(false)
@@ -32,7 +35,9 @@ const Navbar = () => {
                         <li>New & Popular</li>
                         <li>My List</li>
                         <li>Browse By Language</li>
+                        <span onClick={()=>navigate(docUrl)} className='docs'>docs</span>
                     </ul>
+                    
                </div>
                  
                     
