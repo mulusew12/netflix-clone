@@ -1,11 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react'
 import './CardDisplay.css'
 import { Link } from 'react-router-dom'
-const CardDisplay = ({category,title}) => {
+const CardDisplay = ({category,title, apiData, setApiData}) => {
     
     const myRef = useRef()
-
-    const[apiData, setApiData] = useState([])
     const options = {
         method: 'GET',
         headers: {
@@ -24,8 +22,7 @@ const CardDisplay = ({category,title}) => {
         .then(res => res.json())
         .then(response => setApiData(response.results))
         .catch(err => console.error(err));
-        myRef.current.addEventListener('wheel', handleWheel)
-    
+         myRef.current.addEventListener('wheel', handleWheel)
     },[])
 
 

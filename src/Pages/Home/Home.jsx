@@ -16,10 +16,11 @@ import Footer from '../../Components/Footer/Footer';
 
 
 const Home = () => {
+    const[apiData, setApiData] = useState([])
   return (
     <div className='home'>
 
-      <Navbar />
+      <Navbar apiData = {apiData} setApiData={ setApiData}/>
       <div className='imm'>
       <img src="/net_back.jpg" alt="" />
         <div className="hero">
@@ -39,10 +40,10 @@ const Home = () => {
         </div>
       </div>
       <div className="cards">
-        <CardDisplay title="Now Playing" category="now_playing" />
-        <CardDisplay title="Popular" category="popular" />
-        <CardDisplay title="Top Rating" category="top_rated" />
-        <CardDisplay title="Upcoming" category="upcoming" />
+        <CardDisplay title="Now Playing" category="now_playing" apiData=  {apiData} setApiData={ setApiData}/>
+        <CardDisplay title="Popular" category="popular" apiData=  {apiData} setApiData={ setApiData}/>
+        <CardDisplay title="Top Rating" category="top_rated" apiData=  {apiData} setApiData={ setApiData}/>
+        <CardDisplay title="Upcoming" category="upcoming" apiData=  {apiData} setApiData={ setApiData}/>
         <Footer />
       </div>
     </div>
