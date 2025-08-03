@@ -141,15 +141,20 @@ display: none;
 
 }
 .searched{
-      top: 60px;
+      top: 55px;
       position: absolute; 
-       background: rgb(17, 17, 17);
-       border: 2px solid gray;
-       padding: 20px;
+       background: rgb(10, 10, 10);
+       border: 1px solid rgb(13, 71, 1);
+       padding: 10px;
+       left: 10px;
+       align-items: center;
 }
 .searched h1{
     text-align: center;
+    background: #1d1d1d;
+    box-shadow: 2px 2px 3px white;
     padding: 5px;
+    color: rgb(2, 167, 2);
     
 }
 .card::-webkit-scrollbar{
@@ -157,18 +162,14 @@ display: none;
 }
 .card{
     padding: 6px;
-    display: flex;
-    flex-direction: column;
-    display: flex;
+   display: flex;
+   flex-direction: column;
     gap: 20px;
    -webkit-overflow-scrolling: hidden;
     overflow-y: scroll;
+    width: 560px;
+    height: 80vh;
    
-    width: 400px;
-    height: 300px;
-    align-items: center;
-
-    
 }
 .not-f{
     margin-left: 20px;
@@ -204,6 +205,13 @@ display: none;
     }
     .searched{
         top: 100px;
+
+    }
+    .card{
+        width: 360px;
+        display: flex;
+        flex-direction: column;
+        height: 73vh;
     }
 }
 @media (max-width: 1130px) {

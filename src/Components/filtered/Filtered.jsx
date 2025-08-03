@@ -15,9 +15,8 @@ useEffect(()=>{
   return (
     
        <div className='card-display'>
-        <div className="a" ref={myRef} >
-        <Link to={`./player/${cardDisplay.id}`}  className='card-display-items'>
-           <h1>{title}</h1>
+        <div className="aa" ref={myRef} >
+        <Link to={`./player/${cardDisplay.id}`}  className='card-display-item'>
             <img src={`https://image.tmdb.org/t/p/w500/`+cardDisplay.backdrop_path} alt="" />
             <h3>{cardDisplay.original_title}</h3>
         </Link>
