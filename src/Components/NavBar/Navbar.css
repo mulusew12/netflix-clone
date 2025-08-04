@@ -280,8 +280,9 @@ display: none;
         display: none;
     }
       .input{
-    margin-right: 2px;
+    
     left: 20px;
+    width: 300px;
 
   }
     .input input{
