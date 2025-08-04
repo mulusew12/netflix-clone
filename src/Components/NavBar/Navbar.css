@@ -70,7 +70,14 @@ display: none;
 .list:active{
     color: black;
 }
-
+.gogle{
+    display: flex;
+   gap: 20px;
+}
+.gogle span{
+    text-decoration: underline;
+    background: white;
+}
 .rights{
     display: flex;
     gap: 50px;
@@ -274,7 +281,7 @@ display: none;
     }
       .input{
     margin-right: 2px;
-    
+
   }
     .input input{
     padding: 14px;
