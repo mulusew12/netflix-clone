@@ -282,6 +282,7 @@ display: none;
       .input{
     
     left: 20px;
+    right: auto;
     width: 300px;
 
   }
