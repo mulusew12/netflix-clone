@@ -232,13 +232,14 @@ display: none;
         height: 73vh;
     }
   .input{
-    margin-right: 20px;
+    margin-right: 2px;
+   
   }
     .input input{
     padding: 14px;
     width: 100%;
     outline: none;
-   right: 30px;
+   
 }
 }
 @media (max-width: 1130px) {
@@ -266,6 +267,15 @@ display: none;
     .rights-right p{
         display: none;
     }
+      .input{
+    margin-right: 20px;
+  }
+    .input input{
+    padding: 14px;
+    width: 100%;
+    outline: none;
+   right: 30px;
+}
 }
 @media (max-width: 1160px) {
     .list{
