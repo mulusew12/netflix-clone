@@ -24,7 +24,7 @@ const Home = () => {
       <div className='imm'>
       <img src="/net_back.jpg" alt="" />
         <div className="hero">
-        <img src="/assets.net_Original.jpg" alt="" />
+        
           <div className="title">
             <h3>THE</h3>
             <h1>PROTECTOR</h1>

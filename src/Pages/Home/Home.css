@@ -15,7 +15,7 @@
   position: absolute;
   width: 100%;
   
-  bottom: 10%;
+  bottom: 20%;
   padding-left: 6%;
 }
 .hero img{
@@ -31,22 +31,23 @@
 
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 60px;
- 
-  font-weight: 100;
+  font-weight: 700;
 }
 .title{
  place-self: center;
   align-items: center;
   display: flex;
   flex-direction: column;
-  gap: 0;
+  gap: 0; 
+   font-weight: 700;
+
 }
 .title h3{
 
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 40px;
  
-  font-weight: 100;
+
 }
 
 .cards{
@@ -105,6 +106,9 @@ button:hover{
     flex-direction: column;
     align-items: center;
   }
+  .imm img{
+    height: 340px;
+  }
   .hero{
     top: 80px;
     display: flex;
@@ -120,6 +124,8 @@ button:hover{
   }
   .title{
     text-align: center;
+    margin-top: 80px;
+    
   }
   .title h1{
     font-size: 40px;
@@ -134,12 +140,13 @@ button:hover{
  .buts{
   display: flex;
   justify-content: space-evenly;
-   background: rgb(12, 3, 26);
+   
    width: 100%;
  }
 
  .hero img{
   margin-top: 20px;
+  
  }
 
 }

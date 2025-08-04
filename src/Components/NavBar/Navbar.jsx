@@ -59,6 +59,7 @@ const Navbar = ({ apiData, setApiData }) => {
       </div>
       {showInput &&
         <div className="input">
+          <FontAwesomeIcon icon={faSearch} className='vid-search' />
           <input onChange={(e)=>setSearchQuery(e.target.value)} type="text" id='name'  placeholder='Search video title...' />
         </div>
       }
@@ -77,7 +78,7 @@ const Navbar = ({ apiData, setApiData }) => {
         <div className="user">
           <Link to='./login'> <FontAwesomeIcon icon={faUser} className='use' /></Link>
           <FontAwesomeIcon icon={faCaretDown} />
-          <p className='sm' onClick={() => { logout() }} >Sign out of Netflix</p>
+          <p className='sm' onClick={() => { logout() }} >Sign out</p>
         </div>
       </div>
 
