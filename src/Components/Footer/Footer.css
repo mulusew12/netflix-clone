@@ -32,6 +32,14 @@
     color: grey;
     font-family: sans-serif;
 }
+.copy-right span{
+    margin-left: 30px;
+     font-size: 14px;
+    color: grey;
+    font-family: sans-serif;
+    cursor: default;
+    
+}
 @media (max-width: 800px){
    .footer ul{
         grid-template-columns: auto auto;

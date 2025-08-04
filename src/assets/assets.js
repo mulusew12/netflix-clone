@@ -6,3 +6,4 @@ export const assets = {
 net_Original,
 net_back
 }
+

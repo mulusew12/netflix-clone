@@ -3,17 +3,35 @@ import './Footer.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBell, faCopyright} from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faGit, faGithub, faInstagram, faLinkedin, faTelegram, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { NavLink } from 'react-router-dom';
+
 const Footer = () => {
+  
   return (
     <div className='footer'>
       <div className="footer-icons">
-        <FontAwesomeIcon icon={faFacebook} className='fa'/>
-        <FontAwesomeIcon icon={faTelegram} className='fa'/>
-        <FontAwesomeIcon icon={faInstagram} className='fa'/>
-        <FontAwesomeIcon icon={faYoutube} className='fa'/>
-        <FontAwesomeIcon icon={faLinkedin} className='fa'/>
-        <FontAwesomeIcon icon={faGithub} className='fa'/>
-        <FontAwesomeIcon icon={faGit} className='fa'/>
+       <NavLink to=''>
+<FontAwesomeIcon icon={faFacebook} className='fa'/>
+       </NavLink>
+        
+             <NavLink to='https://t.me/Mule_tg'> 
+              <FontAwesomeIcon icon={faTelegram} className='fa'/>
+
+       </NavLink>
+       
+          <NavLink to=''>
+  <FontAwesomeIcon icon={faYoutube} className='fa'/>
+       </NavLink>
+            <NavLink to=''>
+   <FontAwesomeIcon icon={faLinkedin} className='fa'/>
+       </NavLink>
+       
+           <NavLink to='https://github.com/mulusew12/'>
+<FontAwesomeIcon icon={faGithub} className='fa'/>
+       </NavLink>
+     
+
+     
       </div>
       <ul>
         <li>Audio Description</li>
@@ -32,6 +50,11 @@ const Footer = () => {
       <p className="copy-right"> 
         <FontAwesomeIcon icon={faCopyright} />
         1997-2025 Netflix, Inc.
+
+      <span>
+         Copyright {new Date().getFullYear()} © Mule.Dev All Right Reserved.
+      </span>
+      
       </p>
 
     </div>

@@ -87,7 +87,7 @@ const Navbar = ({ apiData, setApiData }) => {
         </div>
         <div className="user">
 
-      {profile && (<Link to='./login'> <FontAwesomeIcon icon={faUser} className='use' /></Link>) }
+      {profile && (<Link> <FontAwesomeIcon icon={faUser} className='use' /></Link>) }
 
           
           <FontAwesomeIcon icon={faCaretDown} />
