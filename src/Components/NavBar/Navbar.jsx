@@ -107,7 +107,7 @@ const Navbar = ({ apiData, setApiData }) => {
             }
           </div>
         ) : (
-          <div className='not-f'> {searchQuery}  not found</div>
+          <div className='not-f'>   not found</div>
         )
       }
     </div>

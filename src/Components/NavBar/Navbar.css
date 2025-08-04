@@ -233,11 +233,12 @@ display: none;
     }
   .input{
     margin-right: 2px;
+    width: 400px;
    
   }
     .input input{
     padding: 14px;
-    width: 100%;
+   width: 100%;
     outline: none;
    
 }
@@ -246,6 +247,10 @@ display: none;
     .lis{
         display: none;
       
+    }
+      .searched{
+        top: 100px;
+
     }
     .li ul{
         background: rgb(10, 10, 10);
@@ -268,7 +273,8 @@ display: none;
         display: none;
     }
       .input{
-    margin-right: 20px;
+    margin-right: 2px;
+    
   }
     .input input{
     padding: 14px;
