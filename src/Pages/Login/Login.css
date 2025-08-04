@@ -56,12 +56,11 @@ opacity: 0.6;
 
 .back{
    font-family: sans-serif;
-   width: 25px;
-   height: 25px;
    text-align: center;
    cursor: pointer;
    text-decoration: none;
    color: white;
+   padding: 5px;
 }
 
 .back:hover{
@@ -107,7 +106,7 @@ input::placeholder{
     max-width: 80%;
     font-family: sans-serif;
 }
-.bots p{
+.buts p{
   margin: 10px 40px;
    font-size: 18px;
    font-family: Arial, Helvetica, sans-serif;

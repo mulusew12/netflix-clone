@@ -6,11 +6,12 @@ import { faBell, faCaretDown, faClose, faList, faRemove, faSearch, faUser } from
 import net_logo from '../../assets/net_logo.jpg'
 import { Link, NavLink, useNavigate } from 'react-router-dom';
 import Filtered from '../filtered/Filtered';
-
+import { auth } from '../../firebase';
+import { onAuthStateChanged } from 'firebase/auth';
 
 
 const Navbar = ({ apiData, setApiData }) => {
-
+  const [profile, setProfile] = useState(null)
   const [searchQuery, setSearchQuery] = useState('')
   const [filterdVideos, setFilteredVideos] = useState([])
   useEffect(() => {
@@ -30,7 +31,16 @@ const Navbar = ({ apiData, setApiData }) => {
   const [showInput, setShowInput] = useState(false)
   
   
-
+  useEffect(()=>{
+     onAuthStateChanged(auth, async(user) =>{
+      if (user) {
+        setProfile(true)
+      }
+   else {
+    setProfile(false)
+   }
+     })
+  }, [])
 
 
   return (
@@ -76,9 +86,12 @@ const Navbar = ({ apiData, setApiData }) => {
           <FontAwesomeIcon icon={faBell} />
         </div>
         <div className="user">
-          <Link to='./login'> <FontAwesomeIcon icon={faUser} className='use' /></Link>
+
+      {profile && (<Link to='./login'> <FontAwesomeIcon icon={faUser} className='use' /></Link>) }
+
+          
           <FontAwesomeIcon icon={faCaretDown} />
-          <p className='sm' onClick={() => { logout() }} >Sign out</p>
+          <Link className='sm' onClick={() => { logout(); to='./login' }} >Sign out</Link>
         </div>
       </div>
 
@@ -97,11 +110,7 @@ const Navbar = ({ apiData, setApiData }) => {
                 cardDisplay.original_title.toLowerCase().includes(searchQuery.toLowerCase())
               )
               .map((cardDisplay, index) => (
-                <Filtered 
-                  key={index} 
-                  title="Now Playing" 
-                  category="now_playing" 
-                  cardDisplay={cardDisplay} 
+                <Filtered  key={index}  title="Now Playing"  category="top_rated"    cardDisplay={cardDisplay} 
                 />
               ))
             }
