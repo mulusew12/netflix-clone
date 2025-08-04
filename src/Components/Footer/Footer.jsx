@@ -10,23 +10,23 @@ const Footer = () => {
   return (
     <div className='footer'>
       <div className="footer-icons">
-       <NavLink to=''>
+       <NavLink className='ic' to=''>
 <FontAwesomeIcon icon={faFacebook} className='fa'/>
        </NavLink>
-        
-             <NavLink to='https://t.me/Mule_tg'> 
+      
+             <NavLink className='ic' to='https://t.me/Mule_tg'> 
               <FontAwesomeIcon icon={faTelegram} className='fa'/>
 
        </NavLink>
        
-          <NavLink to=''>
+          <NavLink className='ic' to=''>
   <FontAwesomeIcon icon={faYoutube} className='fa'/>
        </NavLink>
-            <NavLink to=''>
+            <NavLink className='ic' to=''>
    <FontAwesomeIcon icon={faLinkedin} className='fa'/>
        </NavLink>
        
-           <NavLink to='https://github.com/mulusew12/'>
+           <NavLink className='ic' to='https://github.com/mulusew12/'>
 <FontAwesomeIcon icon={faGithub} className='fa'/>
        </NavLink>
      

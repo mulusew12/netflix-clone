@@ -10,8 +10,11 @@
     margin: 40px 0;
     gap: 20px;
     font-size: 30px;
-    color: rgb(211, 229, 229);
+   
     
+}
+.footer-icons .ic{
+     color: rgb(211, 229, 229);
 }
 .footer-icons .fa{
     cursor: pointer;
